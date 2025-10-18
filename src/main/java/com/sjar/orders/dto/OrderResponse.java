@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class OrderResponse implements Serializable {
+public class OrderResponse {
     private String id;
     private String customerId;
     private String status;
@@ -24,7 +24,7 @@ public class OrderResponse implements Serializable {
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class ItemDto implements Serializable {
+    public static class ItemDto {
         private String sku;
         private Integer quantity;
         private Double price;

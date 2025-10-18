@@ -29,8 +29,8 @@ public class OrderService {
         Order order = orderMapper.toOrder(request);
 
         //order.setId(UUID.randomUUID().toString());
-        order.setCreatedAt(Instant.now());
-        order.setUpdatedAt(Instant.now());
+        //order.setCreatedAt(Instant.now());
+        //order.setUpdatedAt(Instant.now());
         Order savedOrder = orderRepository.save(order);
         return orderMapper.toResponse(savedOrder);
     }

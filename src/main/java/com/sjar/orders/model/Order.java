@@ -24,9 +24,9 @@ public class Order {
     private OrderStatus status;
     private List<Item> items;
     @CreatedDate
-    private Instant CreatedAt;
+    private Instant createdAt;
     @LastModifiedDate
-    private Instant UpdatedAt;
+    private Instant updatedAt;
 
     @Data
     @Builder
