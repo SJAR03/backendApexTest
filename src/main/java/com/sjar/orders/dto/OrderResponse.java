@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.time.Instant;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class OrderResponse {
+public class OrderResponse implements Serializable {
     private String id;
     private String customerId;
     private String status;
@@ -23,7 +24,7 @@ public class OrderResponse {
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class ItemDto {
+    public static class ItemDto implements Serializable {
         private String sku;
         private Integer quantity;
         private Double price;
