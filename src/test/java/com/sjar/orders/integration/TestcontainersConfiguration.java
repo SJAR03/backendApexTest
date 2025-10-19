@@ -1,4 +1,4 @@
-package com.sjar.orders;
+package com.sjar.orders.integration;
 
 import org.springframework.boot.test.context.TestConfiguration;
 /*import org.springframework.boot.testcontainers.service.connection.ServiceConnection;

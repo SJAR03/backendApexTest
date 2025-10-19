@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: orders-service-test
+
+  data:
+    #mongodb:
+      #uri: mongodb://localhost:27017/testdb
+
+    redis:
+      host: testcontainers
+      port: 0
+
+  kafka:
+    producer:
+      retries: 3
+      properties:
+        max.block.ms: 5000
+    #bootstrap-servers: localhost:9092
+    topic: orders.events.test
+
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    root: WARN

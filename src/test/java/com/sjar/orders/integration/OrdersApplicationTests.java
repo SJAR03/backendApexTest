@@ -1,4 +1,4 @@
-package com.sjar.orders;
+package com.sjar.orders.integration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

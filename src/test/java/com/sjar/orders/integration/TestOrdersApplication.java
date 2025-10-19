@@ -1,5 +1,6 @@
-package com.sjar.orders;
+package com.sjar.orders.integration;
 
+import com.sjar.orders.OrdersApplication;
 import org.springframework.boot.SpringApplication;
 
 public class TestOrdersApplication {

@@ -15,7 +15,7 @@ import java.util.Map;
 public class OrderEventProducer {
     private final KafkaTemplate<String, Object> kafkaTemplate;
 
-    @Value("${app.kafka.topic:orders.events}")
+    @Value("${spring.kafka.topic:orders.events}")
     private String topic;
 
     public void sendStatusChangeEvent(String orderId, OrderStatus oldStatus, OrderStatus newStatus, Instant timestamp) {
