@@ -13,6 +13,11 @@ spring:
   kafka:
     bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
     topic: ${APP_KAFKA_TOPIC:orders.events}
+    consumer:
+      group-id: orders-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
   server:
     port: ${SERVER_PORT:8080}
@@ -25,3 +30,13 @@ management:
   endpoint:
     health:
       show-details: always
+  tracing:
+    enabled: true
+    otlp:
+      tracing:
+        endpoint: http://jaeger:4317
+        protocol: grpc
+    metrics:
+      export:
+        simple:
+          enabled: false

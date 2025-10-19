@@ -6,6 +6,7 @@ import com.sjar.orders.dto.CreateOrderRequest;
 import com.sjar.orders.dto.OrderResponse;
 import com.sjar.orders.dto.UpdateStatusRequest;
 import com.sjar.orders.model.OrderStatus;
+import com.sjar.orders.repository.OrderAuditRepository;
 import com.sjar.orders.service.OrderService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -39,6 +40,9 @@ class OrderControllerTest {
 
     @MockitoBean
     private OrderService orderService;
+
+    @MockitoBean
+    private OrderAuditRepository orderAuditRepository;
 
     @Autowired
     private ObjectMapper objectMapper;
