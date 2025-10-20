@@ -290,6 +290,9 @@ En caso de solo querer ejecutar un o unos test en especifico, ejecutar:
 mvn clean test -Dtest=OrderIntegrationTest
 ```
 
+## Data
+Agregue una carpeta llamada data con un JSON sencillo con data que se puede usar como prueba para crear pedidos.
+
 ## Licencia
 Este proyecto fue desarrollado con fines de evaluación técnica y no está destinado a uso comercial.
 
