@@ -1,0 +1,41 @@
+[
+  {
+    "customerId": "supermercado_la_colonia",
+    "items": [
+      { "sku": "Pepsi_355ml", "quantity": 24, "price": 0.85 },
+      { "sku": "7Up_500ml", "quantity": 12, "price": 0.90 },
+      { "sku": "Lay's_Original_60g", "quantity": 15, "price": 0.75 }
+    ]
+  },
+  {
+    "customerId": "pulperia_el_buen_gusto",
+    "items": [
+      { "sku": "Gatorade_Limon_600ml", "quantity": 8, "price": 1.10 },
+      { "sku": "Pepsi_2L", "quantity": 6, "price": 1.95 }
+    ]
+  },
+  {
+    "customerId": "abarroteria_central",
+    "items": [
+      { "sku": "Mirinda_Naranja_355ml", "quantity": 30, "price": 0.80 },
+      { "sku": "MountainDew_600ml", "quantity": 12, "price": 1.00 },
+      { "sku": "Lay's_BBQ_60g", "quantity": 20, "price": 0.75 }
+    ]
+  },
+  {
+    "customerId": "restaurante_los_almendros",
+    "items": [
+      { "sku": "Pepsi_600ml", "quantity": 15, "price": 0.95 },
+      { "sku": "Gatorade_Uva_600ml", "quantity": 10, "price": 1.15 },
+      { "sku": "7Up_1L", "quantity": 8, "price": 1.40 }
+    ]
+  },
+  {
+    "customerId": "tienda_don_jose",
+    "items": [
+      { "sku": "Pepsi_355ml", "quantity": 12, "price": 0.85 },
+      { "sku": "Lay's_SourCream_60g", "quantity": 10, "price": 0.80 },
+      { "sku": "Gatorade_PoncheFrutas_600ml", "quantity": 5, "price": 1.10 }
+    ]
+  }
+]
