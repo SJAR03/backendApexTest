@@ -222,48 +222,48 @@ curl -L 'http://localhost:8080/orders/audit'
 El endpoint `/actuator/health` verifica la disponibilidad de MongoDB, Redis y Kafka. Ejemplo de respuesta:
 ```json 
 {
-    "status": "UP",
-    "components": {
-        "diskSpace": {
-            "status": "UP",
-            "details": {
-                "total": 1081101176832,
-                "free": 984398229504,
-                "threshold": 10485760,
-                "path": "/app/.",
-                "exists": true
-            }
-        },
-        "kafka": {
-            "status": "UP",
-            "details": {
-                "Kafka": "Up"
-            }
-        },
-        "mongo": {
-            "status": "UP",
-            "details": {
-                "maxWireVersion": 17
-            }
-        },
-        "ping": {
-            "status": "UP"
-        },
-        "redis": {
-            "status": "UP",
-            "details": {
-                "version": "7.4.6"
-            }
-        },
-        "ssl": {
-            "status": "UP",
-            "details": {
-                "validChains": [],
-                "invalidChains": []
-            }
-        }
-    }
-} 
+    "status": "UP",
+    "components": {
+        "diskSpace": {
+            "status": "UP",
+            "details": {
+                "total": 1081101176832,
+                "free": 980222939136,
+                "threshold": 10485760,
+                "path": "/app/.",
+                "exists": true
+            }
+        },
+        "kafka": {
+            "status": "UP",
+            "details": {
+                "Kafka": "Up"
+            }
+        },
+        "mongo": {
+            "status": "UP",
+            "details": {
+                "maxWireVersion": 17
+            }
+        },
+        "ping": {
+            "status": "UP"
+        },
+        "redis": {
+            "status": "UP",
+            "details": {
+                "version": "7.4.6"
+            }
+        },
+        "ssl": {
+            "status": "UP",
+            "details": {
+                "validChains": [],
+                "invalidChains": []
+            }
+        }
+    }
+}
 ``` 
 
 ## Decisiones Técnicas
